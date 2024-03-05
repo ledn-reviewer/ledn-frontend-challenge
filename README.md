@@ -50,7 +50,7 @@ Your task is to design the foundation of a user interface capable of identifying
      * After a specified date.
      * With a status marked as `inProgress`.
      * Executed in the ICS ("Imperial Crown Standard") currency.
-cum
+
 2. **Planetary ranking:**
    - From the transactions filtered previously, order the planets based on the total number of transactions, from the highest to the lowest. Furthermore, please provide the sum of all transaction amounts filtered previously for all planets.
 
