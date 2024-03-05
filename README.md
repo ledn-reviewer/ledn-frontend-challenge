@@ -70,7 +70,7 @@ To ensure the success of your mission, adhere to the following technical specifi
 * **Technologies & languages:**
   - Use `React Query` to execute all the requests to the endpoints.
   - Build the solution using `Typescript` and `React`.
-  - Do not update or change the mock server.
+  - Do not update, change or edit the mock server.
  
 * **Testing and validation:**
   - Provide comprehensive guidelines for testing your data architecture.
