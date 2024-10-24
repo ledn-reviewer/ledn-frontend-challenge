@@ -20,6 +20,7 @@ To make this experience both engaging and relevant, we've infused the challenge 
 6. Invite `ledn-reviewer` to your project once it is ready.
 7. Email your contact at Ledn with a confirmation that ledn-reviewer has been added as a contributor and your project is ready for review.
 8. Please include a screen capture of your solution, so we can assess whether there is differences between your environment and ours.
+9. Around 5 to 6 hours are expected to be invested in the challenge.
 
 ## The challenge
 ### Introduction
