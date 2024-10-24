@@ -7,14 +7,12 @@
 </div>
 
 ## Introduction
-Welcome to the Ledn frontend technical challenge! In this assessment, you'll embark on a unique journey that draws inspiration from the challenges our company has faced in the past and continues to address in the ever-evolving landscape of financial technology.
+Welcome to the Ledn frontend technical challenge! This challenge was designed to try to reproduce challenges Ledn faces actively.
 
-Our team has encountered scenarios that require a fine balance between technical prowess and creative problem-solving—qualities we believe define an exceptional frontend engineer. To make this experience both engaging and relevant, we've infused the challenge with a touch of creativity, drawing inspiration from an iconic theme.
-
-While the scenario we present is influenced by the Star Wars universe, please note that this is merely a creative backdrop. You won't be navigating the galaxy far, far away, but rather addressing real challenges that our company has encountered or is currently grappling with.
+To make this experience both engaging and relevant, we've infused the challenge with a touch of creativity, drawing inspiration from the Star Wars theme.
 
 ## Starting and submitting the application
-1. Create a new private repository on your personal Github account.
+1. Create a new private repository on your personal GitHub account.
 2. Copy the content of Ledn challenge in your new private repository.
 3. Install dependencies with `npm install`.
 4. Start the application using `npm start`.
@@ -22,6 +20,7 @@ While the scenario we present is influenced by the Star Wars universe, please no
 6. Invite `ledn-reviewer` to your project once it is ready.
 7. Email your contact at Ledn with a confirmation that ledn-reviewer has been added as a contributor and your project is ready for review.
 8. Please include a screen capture of your solution, so we can assess whether there is differences between your environment and ours.
+9. Around 5 to 6 hours are expected to be invested in the challenge.
 
 ## The challenge
 ### Introduction
@@ -61,7 +60,7 @@ Your task is to design the foundation of a user interface capable of identifying
    - Implement a solution capable of turning all transactions with a status of `inProgress` for a given planet to `blocked` using a planet ID. This security measure is essential to prevent potential bad actors from exploiting the financial system and transferring funds to the Empire.
 
 ### Technical requirements
-To ensure the success of your mission, adhere to the following technical specifications:
+To ensure the success of your mission, adopt the following technical specifications:
 
 * **Data format:**
   - Assume the date input for filtering transactions is from an HTML input.
@@ -337,6 +336,6 @@ To ensure the success of your mission, adhere to the following technical specifi
 ```
 
 <div align='center'>
-  <h3>Do not hesitate to ask us any questions if you have any.</h3>
+  <h3>Do not hesitate to send us any questions if you have any.</h3>
   <h1>May the Force be with you!</h1>
 </div>
