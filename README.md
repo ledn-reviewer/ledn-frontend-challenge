@@ -20,7 +20,9 @@ To make this experience both engaging and relevant, we've infused the challenge 
 6. Invite `ledn-reviewer` to your project once it is ready.
 7. Email your contact at Ledn with a confirmation that ledn-reviewer has been added as a contributor and your project is ready for review.
 8. Please include a screen capture of your solution, so we can assess whether there is differences between your environment and ours.
-9. Around 5 to 6 hours are expected to be invested in the challenge.
+9. While we advocate the use of AI on our day to day at Ledn, in the case of this interview challenge, we expect it to be entirely done by you, the developer. 
+   1. Keep in mind that we reserve ourselves the right to immediately dismiss a candidate if we suspect its challenge has been coded by an AI.
+10. Around 5 to 6 hours are expected to be invested in the challenge.
 
 ## The challenge
 ### Introduction
