@@ -12,8 +12,7 @@
     "react-dom": "18.2.0",
     "react-query": "3.39.3",
     "react-scripts": "5.0.1",
-    "styled-components": "6.1.8",
-    "typescript": "5.6.3"
+    "styled-components": "6.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,6 +48,10 @@
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "jest": "27.5.1",
-    "miragejs": "0.1.48"
+    "miragejs": "0.1.48",
+    "typescript": "5.6.3"
+  },
+  "overrides": {
+    "typescript": "5.6.3"
   }
 }
