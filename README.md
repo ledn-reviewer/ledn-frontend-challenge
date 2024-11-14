@@ -32,7 +32,7 @@ You are now responsible for managing the financial affairs of high-net-worth cli
 
 As the chosen engineer, you have access to critical information:
 
-* **Clients:** A roster of high-net-worth individuals whose fortunes are entwined with the fate of the galaxy.
+* **Users:** A roster of high-net-worth individuals whose fortunes are entwined with the fate of the galaxy.
 
 * **Planets:** The vast array of planets where Coruscant Bank operates, each with its unique economic challenges and opportunities.
 
@@ -44,36 +44,32 @@ In the wake of the Empire's fall, the Republic has turned to Coruscant Bank to a
 
 ## Requirements
 
-Your task is to design the foundation of a user interface capable of identifying planets susceptible to uprisings and enabling proactive intervention. The objective is to build a software that assists administrators in analyzing transactions across various planets. To meet this goal, adhere to the following guidelines:
+Your task is to design the foundation of a responsive user interface capable of identifying planets susceptible to uprisings and enabling proactive intervention. The objective is to build a UI that assists administrators in analyzing transactions across various planets. To meet this goal, adhere to the following guidelines:
 
-1. **Transaction filtering:**
-   - For each planet, using all users' homeworld as a reference for transaction sources, filter transactions:
-     * After a specified date.
-     * With a status marked as `inProgress`.
-     * Executed in the ICS ("Imperial Crown Standard") currency.
+1. **Summary**
+  - The administrators would like to see a summary of all the planets of the galaxy.
+  - From that list, they would like to be able to search for a planet by its name.
 
-2. **Planetary ranking:**
-   - From the transactions filtered previously, order the planets based on the total number of transactions, from the highest to the lowest. Furthermore, please provide the sum of all transaction amounts filtered previously for all planets.
-
-3. **Cumulative transaction values:**
-   - From the ordered list of planets, provide real-time cumulative values for all transactions in both ICS ("Imperial Crown Standard") and GCS ("Galactic Credit Standard") for each planet individually.
-
-4. **Security measures:**
-   - Implement a solution capable of turning all transactions with a status of `inProgress` for a given planet to `blocked` using a planet ID. This security measure is essential to prevent potential bad actors from exploiting the financial system and transferring funds to the Empire.
+2. **Detail**
+  - The administrators would like to access detailed information of the planet.
+  - They would like to be able to filter the transactions by its currency type (GSC (Galactic Credit Standard) and ICS (Imperial Crown Standard)).
+  - They would like to be able to see each transaction in the different currencies of the galaxy according to a real-time rate.
 
 ### Technical requirements
 To ensure the success of your mission, adopt the following technical specifications:
 
-* **Data format:**
-  - Assume the date input for filtering transactions is from an HTML input.
-  - Use only the planet ID to build the function that updates the transactions.
-
 * **Technologies & languages:**
   - Use `React Query` to execute all the requests to the endpoints.
   - Build the solution using `Typescript` and `React`.
-  - Do not update, change or edit the mock server.
+  - In order to allow us to review a similar set of challenges, do not update, change or edit the mock server.
+
+* **User interface:**
+  - Organize the UI to the best of your knowledge and judgment.
+  - In order to allow us to review a similar set of challenges, only use libraries already present in the package.json.
+  - In order to allow us to review HTML and CSS knowledge, the component to filter the transactions by its currency type should be coded from scratch.
  
 * **Testing and validation:**
+  - Provide screenshots or recording of the final implementation.
   - Provide comprehensive guidelines for testing your data architecture.
   - Include step-by-step instructions for starting the solution.
 
