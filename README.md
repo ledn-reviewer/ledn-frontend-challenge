@@ -53,7 +53,7 @@ Your task is to design the foundation of a responsive user interface capable of 
 2. **Detail**
   - The administrators would like to access detailed information of the planet.
   - They would like to be able to filter the transactions by its currency type (GSC (Galactic Credit Standard) and ICS (Imperial Crown Standard)).
-  - They would like to be able to see each transaction in the different currencies of the galaxy according to a real-time rate.
+  - They would like to be able to see each transaction in each currency (GSC and ISC) according to a real-time exchange rate.
 
 ### Technical requirements
 To ensure the success of your mission, adopt the following technical specifications:
@@ -66,7 +66,7 @@ To ensure the success of your mission, adopt the following technical specificati
 * **User interface:**
   - Organize the UI to the best of your knowledge and judgment.
   - In order to allow us to review a similar set of challenges, only use libraries already present in the package.json.
-  - In order to allow us to review HTML and CSS knowledge, the component to filter the transactions by its currency type should be coded from scratch.
+  - In order to allow us to review HTML and CSS knowledge, the component to filter the transactions by its currency type should be coded from scratch, without using the UI component libraries.
  
 * **Testing and validation:**
   - Provide screenshots or recording of the final implementation.
