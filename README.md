@@ -48,12 +48,13 @@ Your task is to design the foundation of a responsive user interface capable of 
 
 1. **Summary**
   - The administrators would like to see a summary of all the planets of the galaxy.
-  - From that list, they would like to be able to search for a planet by its name.
+  - From those planets, they would like to be able to search for a planet by its name.
 
 2. **Detail**
   - The administrators would like to access detailed information of the planet.
-  - They would like to be able to filter the transactions by its currency type (GSC (Galactic Credit Standard) and ICS (Imperial Crown Standard)).
-  - They would like to be able to see each transaction in each currency (GSC and ISC) according to a real-time exchange rate.
+  - They would like to filter the transactions by its currency type (GSC (Galactic Credit Standard) and ICS (Imperial Crown Standard)).
+  - They would like to see each transaction in each currency (GSC and ISC) according to a real-time exchange rate.
+  - They would like to see the total amount transacted (displayed in both GSC and in ISC).
 
 ### Technical requirements
 To ensure the success of your mission, adopt the following technical specifications:
@@ -64,14 +65,25 @@ To ensure the success of your mission, adopt the following technical specificati
   - In order to allow us to review a similar set of challenges, do not update, change or edit the mock server.
 
 * **User interface:**
-  - Organize the UI to the best of your knowledge and judgment.
+  - Organize the UI to the best of your knowledge and judgment as if this was a real application.
+  - Ensure the UI is responsive, even in very small screens.
   - In order to allow us to review a similar set of challenges, only use libraries already present in the package.json.
   - In order to allow us to review HTML and CSS knowledge, the component to filter the transactions by its currency type should be coded from scratch, without using the UI component libraries.
+
+* **Flexible requirements:**
+You MUST choose 2 of the following requirements:
+
+  - Implement a solution capable of turning all transactions with a status of `inProgress` for a given planet to `blocked` using a planet ID.
+  - Add additional controls to filter the planets by terrain and climate.
+  - Create the UI from scratch without using any UI component libraries.
+  - Add multiple languages to the application.
+  - Add automated tests.
  
 * **Testing and validation:**
   - Provide screenshots or recording of the final implementation.
   - Provide comprehensive guidelines for testing your data architecture.
   - Include step-by-step instructions for starting the solution.
+  - Provide which flexible requirements you have chosen.
 
 ## Technical documentation
 ### Backend data information
