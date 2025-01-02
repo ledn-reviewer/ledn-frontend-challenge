@@ -4,6 +4,8 @@ import planets from './mockData/planets';
 import users from './mockData/users';
 import transactions from './mockData/transactions';
 
+// DO NOT CHANGE THIS FILE (INCLUDING EXPORTING THE TYPES).
+// Treat this file as if it lived in a separate codebase that you can't change or share.
 interface ExchangeRate {
   rate: string;
 }
