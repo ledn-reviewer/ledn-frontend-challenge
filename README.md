@@ -63,11 +63,12 @@ To ensure the success of your mission, adopt the following technical specificati
   - Use `React Query` to execute all the requests to the endpoints.
   - Build the solution using `Typescript` and `React`.
   - In order to allow us to review a similar set of challenges, do not update, change or edit the mock server.
+  - You're free to add more libraries to package.json that you feel are important for this project, except for:
+    - UI component libraries. In order to allow us to review a similar set of challenges, use only Mantine (already included in package.json).
 
 * **User interface:**
   - Organize the UI to the best of your knowledge and judgment as if this was a real application.
   - Ensure the UI is responsive, even in very small screens.
-  - In order to allow us to review a similar set of challenges, only use libraries already present in the package.json.
   - In order to allow us to review HTML and CSS knowledge, the component to filter the transactions by its currency type should be coded from scratch, without using the UI component libraries.
 
 * **Flexible requirements:**
@@ -77,6 +78,7 @@ You MUST choose 2 of the following requirements:
   - Add additional controls to filter the planets by terrain and climate.
   - Create the UI from scratch without using any UI component libraries.
   - Add multiple languages to the application.
+    - This should be built from scratch, without the addition of a i18n library for it (such as react-i18next or react-intl).
   - Add automated tests.
  
 * **Testing and validation:**
