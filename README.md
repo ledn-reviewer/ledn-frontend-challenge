@@ -1,5 +1,5 @@
 <div align='center'>
-  <img width='100%' src='https://blog.ledn.io/hs-fs/hubfs/Ledn_Animation_short-1.gif?width=1017&name=Ledn_Animation_short-1.gif'/>
+  <img width='100%' src='https://cdn.prod.website-files.com/67e57166f96cd074b599cef1/67f64eb3650437f0d776ca14_67f3faf7757a2616f94a10c0_Ledn_Animation_short-1.gif'/>
   <br><br>
   <h3>Where digital assets come to life</h3>
   <br><br>
