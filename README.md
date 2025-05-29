@@ -100,7 +100,7 @@ Your submission will be evaluated based on:
 - **Problem-Solving**: How well you address the requirements
 - **AI Integration**: Thoughtful use of AI tools and clear documentation of their usage
 
-**Important**: During the interview process, you will be asked to explain any part of your codebase, including sections where AI was used. Be prepared to discuss your decision-making process and demonstrate understanding of all implemented solutions.
+**Important**: During the interview process, you may be asked to explain any part of your codebase, including sections where AI was used. Be prepared to discuss your decision-making process and demonstrate understanding of all implemented solutions.
 
 ## Technical documentation
 
