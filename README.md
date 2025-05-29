@@ -20,11 +20,13 @@ To make this experience both engaging and relevant, we've infused the challenge 
 6. Invite `ledn-reviewer` to your project once it is ready.
 7. Email your contact at Ledn with a confirmation that ledn-reviewer has been added as a contributor and your project is ready for review.
 8. Please include a screen capture of your solution, so we can assess whether there is differences between your environment and ours.
-9. While we advocate the use of AI on our day to day at Ledn, in the case of this interview challenge, we expect it to be entirely done by you, the developer. 
-   1. Keep in mind that we reserve ourselves the right to immediately dismiss a candidate if we suspect its challenge has been coded by an AI.
+9. We encourage the use of AI tools to enhance your development process. However, you must clearly document:
+   - Where your manual work ends and AI assistance begins.
+   - How you used AI in your development approach.
 10. Around 5 to 6 hours are expected to be invested in the challenge.
 
 ## The challenge
+
 ### Introduction
 Welcome to the Coruscant Bank's engineering department. In a galaxy far, far away, following the fall of the Empire, the financial landscape is in disarray, and you, esteemed engineer, have been entrusted with a crucial mission.
 
@@ -80,14 +82,28 @@ You MUST choose 2 of the following requirements:
   - Add multiple languages to the application.
     - This should be built from scratch, without the addition of a i18n library for it (such as react-i18next or react-intl).
   - Add automated tests.
- 
+
 * **Testing and validation:**
   - Provide screenshots or recording of the final implementation.
   - Provide comprehensive guidelines for testing your data architecture.
   - Include step-by-step instructions for starting the solution.
   - Provide which flexible requirements you have chosen.
+  - Provide within your documentation specific areas where AI was used (components, logic, styling, etc.).
+
+## Evaluation Criteria
+
+Your submission will be evaluated based on:
+
+- **Code Quality**: Clean, maintainable, and well-structured code
+- **Technical Implementation**: Proper use of React, TypeScript, and React Query
+- **UI/UX Design**: Responsive design and user experience
+- **Problem-Solving**: How well you address the requirements
+- **AI Integration**: Thoughtful use of AI tools and clear documentation of their usage
+
+**Important**: During the interview process, you will be asked to explain any part of your codebase, including sections where AI was used. Be prepared to discuss your decision-making process and demonstrate understanding of all implemented solutions.
 
 ## Technical documentation
+
 ### Backend data information
 * ExchangeRate:
   * `rate`: Value of ICS in the GCS currency
