@@ -1,8 +1,8 @@
 // mirage/server.ts
-import { createServer, Model, Factory } from 'miragejs';
-import planets from './mockData/planets';
-import users from './mockData/users';
-import transactions from './mockData/transactions';
+import { createServer, Model, Factory } from "miragejs";
+import { planets } from "./mockData/planets";
+import { users } from "./mockData/users";
+import { transactions } from "./mockData/transactions";
 
 // DO NOT CHANGE THIS FILE (INCLUDING EXPORTING THE TYPES).
 // Treat this file as if it lived in a separate codebase that you can't change or share.
@@ -55,7 +55,7 @@ interface Transaction {
   status: string;
 }
 
-export function makeServer({ environment = 'development' } = {}) {
+export function makeServer({ environment = "development" } = {}) {
   let server = createServer({
     environment,
 
@@ -64,41 +64,41 @@ export function makeServer({ environment = 'development' } = {}) {
       user: Model.extend<User[]>([]),
       transaction: Model.extend<Transaction[]>([]),
       exchangeRate: Model.extend<ExchangeRate>({
-        rate: '1.000000',
+        rate: "1.000000",
       }),
     },
 
     factories: {
       exchangeRate: Factory.extend<ExchangeRate>({
-        rate: '1.000000',
+        rate: "1.000000",
       }),
     },
 
     seeds(server) {
-      server.createList('exchangeRate', 1);
+      server.createList("exchangeRate", 1);
       planets.forEach((planet) => {
-        server.create('planet', planet);
+        server.create("planet", planet);
       });
       users.forEach((user) => {
-        server.create('user', user);
+        server.create("user", user);
       });
       transactions.forEach((transaction) => {
-        server.create('transaction', transaction);
+        server.create("transaction", transaction);
       });
     },
 
     routes() {
-      this.namespace = 'api';
+      this.namespace = "api";
 
       // PLANETS
-      this.get('/planets', (schema: any) => {
+      this.get("/planets", (schema: any) => {
         const planetsData = schema.planets.all();
         return {
           planets: planetsData.models,
         };
       });
 
-      this.get('/planets/:id', (schema: any, request) => {
+      this.get("/planets/:id", (schema: any, request) => {
         const id = request.params.id;
         const planet = schema.planets.find(id);
 
@@ -106,20 +106,20 @@ export function makeServer({ environment = 'development' } = {}) {
           return planet;
         } else {
           return {
-            error: 'Planet not found',
+            error: "Planet not found",
           };
         }
       });
 
       // USERS
-      this.get('/users', (schema: any) => {
+      this.get("/users", (schema: any) => {
         return {
           users: schema.users.all().models,
         };
       });
 
       // Fetch user by ID
-      this.get('/users/:id', (schema: any, request) => {
+      this.get("/users/:id", (schema: any, request) => {
         const id = request.params.id;
         const user = schema.users.find(id);
 
@@ -127,13 +127,13 @@ export function makeServer({ environment = 'development' } = {}) {
           return user;
         } else {
           return {
-            error: 'User not found',
+            error: "User not found",
           };
         }
       });
 
       // Fetch users by homeworld
-      this.get('/users/planet/:planetId', (schema: any, request) => {
+      this.get("/users/planet/:planetId", (schema: any, request) => {
         const homeworld = request.params.planetId;
         const users = schema.users.where({ homeworld }).models;
 
@@ -143,14 +143,14 @@ export function makeServer({ environment = 'development' } = {}) {
       });
 
       // TRANSACTIONS
-      this.get('/transactions', (schema: any) => {
+      this.get("/transactions", (schema: any) => {
         return {
           transactions: schema.transactions.all().models,
         };
       });
 
       // Fetch transaction by ID
-      this.get('/transactions/:id', (schema: any, request) => {
+      this.get("/transactions/:id", (schema: any, request) => {
         const id = request.params.id;
         const transaction = schema.transactions.find(id);
 
@@ -158,13 +158,13 @@ export function makeServer({ environment = 'development' } = {}) {
           return transaction;
         } else {
           return {
-            error: 'Transaction not found',
+            error: "Transaction not found",
           };
         }
       });
 
       // Fetch transactions by user ID
-      this.get('/transactions/user/:id', (schema: any, request) => {
+      this.get("/transactions/user/:id", (schema: any, request) => {
         const userId = request.params.id;
         const transactions = schema.transactions.where({ user: userId }).models;
 
@@ -174,11 +174,13 @@ export function makeServer({ environment = 'development' } = {}) {
       });
 
       // Fetch transactions by a list of user IDs
-      this.get('/transactions/users/:ids', (schema: any, request) => {
+      this.get("/transactions/users/:ids", (schema: any, request) => {
         const userIds = JSON.parse(request.params.ids);
-        
+
         // Retrieve transactions for the specified user IDs
-        const transactions = schema.transactions.where((transaction: Transaction) => userIds.includes(transaction.user)).models;
+        const transactions = schema.transactions.where(
+          (transaction: Transaction) => userIds.includes(transaction.user),
+        ).models;
 
         return {
           transactions,
@@ -186,13 +188,15 @@ export function makeServer({ environment = 'development' } = {}) {
       });
 
       // Update batch of transactions
-      this.put('/transactions/update-batch', (schema: any, request) => {
+      this.put("/transactions/update-batch", (schema: any, request) => {
         const requestData = JSON.parse(request.requestBody);
         const updatedTransactions = requestData.transactions;
 
         // Update each transaction in the batch
         updatedTransactions.forEach((updatedTransaction: Transaction) => {
-          const existingTransaction = schema.transactions.find(updatedTransaction.id);
+          const existingTransaction = schema.transactions.find(
+            updatedTransaction.id,
+          );
 
           if (existingTransaction) {
             existingTransaction.update(updatedTransaction);
@@ -200,14 +204,14 @@ export function makeServer({ environment = 'development' } = {}) {
         });
 
         return {
-          message: 'Batch of transactions updated successfully',
+          message: "Batch of transactions updated successfully",
           transactions: updatedTransactions,
         };
       });
 
       // EXCHANGE RATE
-      this.get('/exchange-rate', (schema: any) => {
-        const latestRate = schema.first('exchangeRate') as ExchangeRate;
+      this.get("/exchange-rate", (schema: any) => {
+        const latestRate = schema.first("exchangeRate") as ExchangeRate;
         return {
           rate: latestRate.rate,
         };
@@ -234,7 +238,7 @@ export function makeServer({ environment = 'development' } = {}) {
 
   // Update the exchange rate every second
   function updateExchangeRate(): void {
-    const latestRate = server.schema.first('exchangeRate');
+    const latestRate = server.schema.first("exchangeRate");
     const updatedRate = simulateRateVariation(latestRate!.rate);
     latestRate!.update({ rate: updatedRate });
   }
