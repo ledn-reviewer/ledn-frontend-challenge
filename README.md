@@ -74,13 +74,13 @@ To ensure the success of your mission, adopt the following technical specificati
 * **Flexible requirements:**
 You must choose at least two optional requirements:
 
-  - Make it possible for administrators to block all transactions from a planet.
+  - Make it possible for administrators to block all in progress transactions from a planet.
   - Make it possible to filter the planets by terrain and climate.
   - Don't use any UI component libraries.
   - Add multiple languages to the application, without using an external library.
   - Add automated testing.
 
-* **Validation:**
+* **Documentation:**
   - Provide screenshots or recording of the final implementation.
   - Provide comprehensive guidelines for testing your data architecture.
   - Include step-by-step instructions for starting the solution.
@@ -97,6 +97,8 @@ Your submission will be evaluated based on:
 - Problem-Solving
 - Full Development Process
 - AI Usage
+
+During the interview process, you may be asked to explain any part of your codebase. Be prepared to discuss your decision-making process and demonstrate understanding of all implemented solutions.
 
 The requirements and evaluation criteria are vague on purpose, use your best judgment to implement the solution. Threat this as a production grade application.
 
