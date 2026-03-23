@@ -23,7 +23,6 @@ To make this experience both engaging and relevant, we've infused the challenge 
 9. We encourage the use of AI tools to enhance your development process. However, you must clearly document:
    - Where your manual work ends and AI assistance begins.
    - How you used AI in your development approach.
-10. Around 5 to 6 hours are expected to be invested in the challenge.
 
 ## The challenge
 
@@ -40,7 +39,7 @@ As the chosen engineer, you have access to critical information:
 
 * **Transactions:** Detailed records of your clients' financial transactions, recorded in both the now obsolete "Imperial Crown Standard" and the widely accepted "Galactic Credit Standard".
 
-* **Exchange rates:** The fluctuating exchange rates between the "Imperial Crown Standard" and the "Galactic Credit Standard", adding an extra layer of complexity to financial reconciliation.
+* **Exchange rates:** The fluctuating exchange rates between the "Imperial Crown Standard" (ICS) and the "Galactic Credit Standard" (GCS), adding an extra layer of complexity to financial reconciliation.
 
 In the wake of the Empire's fall, the Republic has turned to Coruscant Bank to aid in rectifying the administrative chaos left behind. Your mission is to build the foundation of the administrative application, which will eventually ensure the seamless transition of high-net-worth clients into the new era.
 
@@ -50,13 +49,13 @@ Your task is to design the foundation of a responsive user interface capable of 
 
 1. **Summary**
   - The administrators would like to see a summary of all the planets of the galaxy.
-  - From those planets, they would like to be able to search for a planet by its name.
+  - They would also like to be able to search for a planet by its name.
 
 2. **Detail**
   - The administrators would like to access detailed information of the planet.
-  - They would like to filter the transactions by its currency type (GSC (Galactic Credit Standard) and ICS (Imperial Crown Standard)).
-  - They would like to see each transaction in each currency (GSC and ISC) according to a real-time exchange rate.
-  - They would like to see the total amount transacted (displayed in both GSC and in ISC).
+  - They would like to filter the transactions by its currency type.
+  - They would like to see each transaction in each currency, according to a real-time exchange rate.
+  - They would like to see the total amount transacted in both currencies.
 
 ### Technical requirements
 To ensure the success of your mission, adopt the following technical specifications:
@@ -65,8 +64,7 @@ To ensure the success of your mission, adopt the following technical specificati
   - Use `React Query` to execute all the requests to the endpoints.
   - Build the solution using `Typescript` and `React`.
   - In order to allow us to review a similar set of challenges, do not update, change or edit the mock server.
-  - You're free to add more libraries to package.json that you feel are important for this project, except for:
-    - UI component libraries. In order to allow us to review a similar set of challenges, use only Chakra UI (already included in package.json).
+  - You're free to add more libraries to `package.json` that you feel are important for this project, except for UI component libraries. In order to allow us to review a similar set of challenges, you many only use Chakra UI.
 
 * **User interface:**
   - Organize the UI to the best of your knowledge and judgment as if this was a real application.
@@ -74,33 +72,35 @@ To ensure the success of your mission, adopt the following technical specificati
   - In order to allow us to review HTML and CSS knowledge, the component to filter the transactions by its currency type should be coded from scratch, without using UI component libraries.
 
 * **Flexible requirements:**
-You MUST choose 2 of the following requirements:
+You must choose at least two optional requirements:
 
-  - Implement a solution capable of turning all transactions with a status of `inProgress` for a given planet to `blocked` using a planet ID.
-  - Add additional controls to filter the planets by terrain and climate.
-  - Create the UI from scratch without using any UI component libraries.
-  - Add multiple languages to the application.
-    - This should be built from scratch, without the addition of a i18n library for it (such as react-i18next or react-intl).
-  - Add automated tests.
+  - Make it possible for administrators to block all in progress transactions from a planet.
+  - Make it possible to filter the planets by terrain and climate.
+  - Don't use any UI component libraries.
+  - Add multiple languages to the application, without using an external library.
+  - Add automated testing.
 
-* **Testing and validation:**
+* **Documentation:**
   - Provide screenshots or recording of the final implementation.
   - Provide comprehensive guidelines for testing your data architecture.
   - Include step-by-step instructions for starting the solution.
-  - Provide which flexible requirements you have chosen.
-  - Provide within your documentation specific areas where AI was used (components, logic, styling, etc.).
+  - Describe the enhancements you chose and why.
+  - Provide within your documentation specific areas where AI was used.
 
 ## Evaluation Criteria
 
 Your submission will be evaluated based on:
 
-- **Code Quality**: Clean, maintainable, and well-structured code
-- **Technical Implementation**: Proper use of React, TypeScript, and React Query
-- **UI/UX Design**: Responsive design and user experience
-- **Problem-Solving**: How well you address the requirements
-- **AI Integration**: Thoughtful use of AI tools and clear documentation of their usage
+- Code Quality
+- Technical Implementation
+- UI/UX Design
+- Problem-Solving
+- Full Development Process
+- AI Usage
 
-**Important**: During the interview process, you may be asked to explain any part of your codebase, including sections where AI was used. Be prepared to discuss your decision-making process and demonstrate understanding of all implemented solutions.
+During the interview process, you may be asked to explain any part of your codebase. Be prepared to discuss your decision-making process and demonstrate understanding of all implemented solutions.
+
+The requirements and evaluation criteria are vague on purpose, use your best judgment to implement the solution. Threat this as a production grade application.
 
 ## Technical documentation
 
